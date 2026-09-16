@@ -22,14 +22,16 @@
 
 @font-face {
   font-family: "ArabicText";
-  src: url("/fonts/arabtype.ttf") format("truetype");
+  src: url("/fonts/arabtype.ttf") format("truetype"),
+    url("/awedding/fonts/arabtype.ttf") format("truetype");
   font-display: swap;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "ArabicDisplay";
-  src: url("/fonts/aldhabi.ttf") format("truetype");
+  src: url("/fonts/aldhabi.ttf") format("truetype"),
+    url("/awedding/fonts/aldhabi.ttf") format("truetype");
   font-display: swap;
   font-weight: 400;
 }
