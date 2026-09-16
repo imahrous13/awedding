@@ -1,14 +1,14 @@
 export const weddingData = {
   bride: "ريم",
   groom: "عبدالرحمن",
-  date: "الخميس ٢٢ أكتوبر ٢٠٢٦",
+  date: "يوم الخميس ٢٢ اكتوبر ٢٠٢٦",
   dateISO: "2026-10-22T16:00:00+03:00",
   time: {
-    starts: "من الساعة الرابعة مساءً",
-    ends: "حتى الساعة السابعة مساءً",
+    starts: "يبدأ من ٤ مساء",
+    ends: "وينتهي في ٧ مساء",
   },
   venue: "قاعة مدار",
-  address: "فندق توليب جاردنز، مدينة نصر",
+  address: "فندق توليب جاردنز - مدينة نصر اول طريق السويس",
   mapsUrl: "https://maps.app.goo.gl/PtSq6tPKaHNRY62D7?g_st=ic",
   rsvpName: "",
   rsvpPhone: "",

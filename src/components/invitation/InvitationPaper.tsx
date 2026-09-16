@@ -1,6 +1,5 @@
 import { asset } from "@/lib/assets";
 import { CoupleNames, Families, IntroMessage, InvitationLine, RSVP, SaveTheDate } from "./scenes";
-import { WritingPen } from "./WritingPen";
 
 const STEMS = ["a", "b", "c", "d", "e"] as const;
 
@@ -27,7 +26,6 @@ export function InvitationPaper() {
       </div>
       <div className="paper-wash" />
       <div className="paper-vignette" />
-      <WritingPen />
       <IntroMessage />
       <Families />
       <CoupleNames />

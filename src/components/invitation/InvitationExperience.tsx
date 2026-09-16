@@ -264,7 +264,8 @@ export function InvitationExperience() {
       addCinematicScene(timeline, q, "intro", {
         start: 3.2,
         fadeOut: 6.05,
-        hidden: 6.7,
+        hidden: 7.45,
+        fadeDuration: 1.35,
         groups: [
           { selector: '[data-part="bismillah"] .ch', at: 3.25, stagger: 0.03 },
           { selector: '[data-part="verse"] .ch', at: 3.55, stagger: 0.02 },
@@ -306,8 +307,8 @@ export function InvitationExperience() {
 
       addCinematicScene(timeline, q, "date", {
         start: 20.5,
-        fadeOut: 26.9,
-        hidden: 27.55,
+        fadeOut: 26.55,
+        hidden: 27.2,
         groups: [
           { selector: '[data-part="save"] .ch, [data-part="date"] .ch', at: 20.6, stagger: 0.03 },
           { selector: '[data-part="time-title"] .ch, [data-part="time-start"] .ch, [data-part="time-end"] .ch', at: 22.0, stagger: 0.03 },
@@ -627,6 +628,7 @@ type SceneOptions = {
   start: number;
   fadeOut: number;
   hidden: number;
+  fadeDuration?: number;
   groups: Array<{
     selector: string;
     at: number;
@@ -661,7 +663,12 @@ function addCinematicScene(
 
   timeline.to(
     scene,
-    { opacity: 0, filter: "blur(4px)", duration: 0.95, ease: "power2.inOut" },
+    {
+      opacity: 0,
+      filter: "blur(4px)",
+      duration: options.fadeDuration ?? 0.95,
+      ease: "power2.inOut",
+    },
     options.fadeOut,
   );
   timeline.set(q(`[data-scene="${name}"] .ch`), {
