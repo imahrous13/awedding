@@ -756,8 +756,8 @@ function addNamesInkReveal(
       y: 0,
       filter: "blur(0px)",
       // Arabic writing travels from the visual right edge toward the left.
-      // Keep the unrevealed area on the right so the ink stays behind the nib.
-      clipPath: "inset(0 100% 0 0)",
+      // Keep the unrevealed area on the left so the visible ink follows the nib.
+      clipPath: "inset(0 0 0 100%)",
     }, at);
 
     timeline.to(driver, {
@@ -771,7 +771,7 @@ function addNamesInkReveal(
         const revealInset = `${Math.max(0, (1 - progress) * 100)}%`;
 
         gsap.set(pen, { x, y });
-        gsap.set(word, { clipPath: `inset(0 ${revealInset} 0 0)` });
+        gsap.set(word, { clipPath: `inset(0 0 0 ${revealInset})` });
       },
     }, at);
     timeline.set(word, {
