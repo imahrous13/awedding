@@ -1,6 +1,7 @@
 "use client";
 
 import { getVenueLines, weddingData } from "@/data/wedding";
+import { asset } from "@/lib/assets";
 import { CharText } from "./CharText";
 import { MapLink } from "./MapLink";
 
@@ -40,6 +41,7 @@ export function Families() {
 export function CoupleNames() {
   return (
     <div className="scene scene-names" data-scene="names">
+      <img className="quill-pen" data-writing-pen src={asset("/textures/quill-pen.png")} alt="" draggable={false} />
       <div className="couple-stack">
         <div className="couple-person couple-person-large" data-part="groom">
           <CharText className="couple-label arabic-display" text="نجل الأول" />

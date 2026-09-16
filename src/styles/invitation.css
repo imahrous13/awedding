@@ -1350,6 +1350,24 @@ body {
   gap: 1.5cqh;
 }
 
+.scene-names .script-name .ch-connected {
+  will-change: clip-path, opacity, filter;
+}
+
+.quill-pen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  width: clamp(118px, 30cqw, 190px);
+  height: auto;
+  overflow: visible;
+  opacity: 0;
+  filter: drop-shadow(0 4px 5px rgba(48, 12, 20, 0.24));
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
 .scene-names .couple-person-large .script-name {
   font-family: "ArabicDisplay", "ArabicText", serif;
   font-size: clamp(44px, 15cqw, 78px);
