@@ -22,7 +22,7 @@ export function Families() {
       <CharText className="kicker arabic-display" part="families-title" text="يتشرف كلٌ من" />
       <div className="parents-stack">
         <div className="parent-name" data-part="father-one">
-          <CharText className="parent-full-name arabic-display" text="الدكتور / محمد محروس حسب" connected />
+          <CharText className="parent-full-name arabic-display" text="دكتور محمد محروس حسب" connected />
         </div>
         <div className="ampersand" data-part="families-and" aria-label="و">
           <span className="amp-flourish ch" aria-hidden="true" />
@@ -30,7 +30,7 @@ export function Families() {
           <span className="amp-flourish amp-flourish-end ch" aria-hidden="true" />
         </div>
         <div className="parent-name" data-part="father-two">
-          <CharText className="parent-full-name arabic-display" text="الدكتور المهندس/ محمد عثمان ابراهيم" connected />
+          <CharText className="parent-full-name arabic-display" text="دكتور مهندس محمد عثمان إبراهيم" connected />
         </div>
       </div>
       <CharText className="kicker arabic-display families-invite" part="families-invite" text="بدعوتكم لحضور حفل زفاف" />

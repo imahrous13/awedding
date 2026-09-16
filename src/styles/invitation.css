@@ -1838,3 +1838,99 @@ body {
 .scene-names [data-part="bride"] .script-name {
   margin-top: 16px;
 }
+
+/* Ceremonial scale from the family page through the closing details. These
+   values add presence while staying fluid inside the 9:16 invitation stage. */
+.scene-families .families-feeling {
+  font-size: clamp(1.7rem, 6.4cqw, 2.7rem);
+}
+
+.scene-families .kicker {
+  font-size: clamp(1.65rem, 6cqw, 2.5rem);
+}
+
+.scene-families .parent-full-name {
+  width: min(96%, 760px);
+  font-size: clamp(2.05rem, 8.6cqw, 3.8rem);
+  line-height: 1.3;
+}
+
+.scene-families .families-invite {
+  font-size: clamp(1.65rem, 5.8cqw, 2.5rem);
+}
+
+.scene-names .couple-person-large .script-name {
+  font-size: clamp(5rem, 20cqw, 7.2rem);
+}
+
+.scene-names .couple-label {
+  font-size: clamp(1.5rem, 5.2vw, 1.85rem);
+}
+
+.scene-names .couple-title {
+  font-size: clamp(1.35rem, 4.8vw, 1.7rem);
+}
+
+.scene-invite .script-kindly {
+  font-size: clamp(2.3rem, 9cqw, 4.2rem);
+}
+
+.scene-invite .kicker {
+  font-size: clamp(1.45rem, 5.4cqw, 2.25rem);
+}
+
+.scene-date .save-stack .script-save {
+  font-size: clamp(1.7rem, 6.2cqw, 2.7rem);
+}
+
+.scene-date .save-month {
+  font-size: clamp(2rem, 7.2cqw, 3.3rem);
+}
+
+.scene-date .save-year {
+  font-size: clamp(1.95rem, 7cqw, 3.1rem);
+}
+
+.scene-date .date-time-label,
+.scene-time .script-kindly,
+.scene-countdown .script-kindly {
+  font-size: clamp(1.65rem, 6cqw, 2.7rem);
+}
+
+.scene-date .date-time-line,
+.scene-time .event-time {
+  font-size: clamp(1.8rem, 7.2cqw, 3.4rem);
+}
+
+.scene-rsvp .rsvp-title {
+  font-size: clamp(2.1rem, 8cqw, 3.8rem);
+}
+
+.scene-rsvp .rsvp-name {
+  font-size: clamp(1.9rem, 6.5cqw, 3rem);
+}
+
+.scene-rsvp .rsvp-place,
+.scene-rsvp .rsvp-city {
+  font-size: clamp(1.55rem, 5.3cqw, 2.45rem);
+}
+
+.end-date {
+  font-size: clamp(1.9rem, 7.5cqw, 3rem);
+}
+
+.end-time {
+  font-size: clamp(1.2rem, 4.8cqw, 1.8rem);
+}
+
+.end-venue {
+  font-size: clamp(1.55rem, 5.6cqw, 2.15rem);
+}
+
+.end-address {
+  font-size: clamp(1.3rem, 4.4cqw, 1.7rem);
+}
+
+.end-map {
+  font-size: clamp(1.15rem, 4cqw, 1.55rem);
+}
