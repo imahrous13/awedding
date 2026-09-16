@@ -1934,3 +1934,171 @@ body {
 .end-map {
   font-size: clamp(1.15rem, 4cqw, 1.55rem);
 }
+
+/* Canonical stage-relative type scale.
+   All invitation typography below is measured from the fixed 9:16 stage,
+   never from the browser viewport. This final block intentionally supersedes
+   older scene-specific values above so responsive rules cannot make the card
+   look timid on desktop. */
+.stage {
+  --fs-tiny: 3.7cqw;
+  --fs-small: 4.3cqw;
+  --fs-support: 5cqw;
+  --fs-body: 5.6cqw;
+  --fs-important: 6.4cqw;
+  --fs-heading: 7.2cqw;
+  --fs-name: 16cqw;
+  --fs-date-number: 18cqw;
+}
+
+.scene-intro .kicker {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: var(--fs-body) !important;
+}
+
+.scene-intro .arabic-verse {
+  width: min(92%, 650px);
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 5.6cqw !important;
+  line-height: 1.85;
+}
+
+.scene-intro .verse-source {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 4.5cqw !important;
+}
+
+.scene-families .families-feeling {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: var(--fs-support) !important;
+}
+
+.scene-families .kicker {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: var(--fs-support) !important;
+}
+
+.scene-families .parent-full-name {
+  width: min(96%, 760px);
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 6cqw !important;
+  line-height: 1.35;
+  white-space: normal;
+}
+
+.scene-families .families-invite {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 5.4cqw !important;
+  line-height: 1.55;
+}
+
+.scene-names .couple-label {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: var(--fs-support) !important;
+}
+
+.scene-names .couple-title {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 4.8cqw !important;
+}
+
+.scene-names .couple-person-large .script-name {
+  width: 88%;
+  font-family: "ArabicDisplay", "ArabicText", serif;
+  font-size: var(--fs-name) !important;
+  font-weight: 400;
+  line-height: 0.95;
+  transform: none !important;
+}
+
+.scene-names [data-part="bride"] .script-name,
+.scene-names [data-part="groom"] .script-name {
+  transform: none !important;
+}
+
+.scene-names .couple-stack .amp-mark {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 5.8cqw !important;
+}
+
+.scene-invite .script-kindly {
+  width: min(92%, 680px);
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 6.3cqw !important;
+  line-height: 1.45;
+}
+
+.scene-invite .kicker {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: var(--fs-support) !important;
+}
+
+.scene-date .save-stack .script-save,
+.scene-date .date-time-label,
+.scene-time .script-kindly,
+.scene-countdown .script-kindly {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 4.8cqw !important;
+}
+
+.scene-date .save-month {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 7.2cqw !important;
+}
+
+.scene-date .save-year {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 8cqw !important;
+}
+
+.scene-date .date-time-line,
+.scene-time .event-time {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 6.3cqw !important;
+  line-height: 1.55;
+}
+
+.scene-countdown .count-value {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 11cqw !important;
+}
+
+.scene-countdown .count-label {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 4.3cqw !important;
+}
+
+.scene-rsvp .rsvp-title {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 6.3cqw !important;
+  line-height: 1.5;
+}
+
+.scene-rsvp .rsvp-name,
+.end-venue {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 6cqw !important;
+}
+
+.scene-rsvp .rsvp-place,
+.scene-rsvp .rsvp-city,
+.end-date {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 5.4cqw !important;
+}
+
+.end-time {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 5.2cqw !important;
+}
+
+.end-address {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 4.6cqw !important;
+}
+
+.end-map,
+.scene-rsvp .map-link {
+  font-family: "ArabicText", "Arabic Typesetting", "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 4.4cqw !important;
+}
