@@ -1225,6 +1225,241 @@ body {
   }
 }
 
+/* Full-canvas text sizing. Every scene gets a large, readable floor and uses
+   its available height instead of clustering the copy in the middle. */
+.scene {
+  box-sizing: border-box;
+  padding: 7cqh 3cqw;
+  text-wrap: balance;
+}
+
+.scene-intro,
+.scene-families,
+.scene-names,
+.scene-invite,
+.scene-time,
+.scene-countdown,
+.scene-rsvp {
+  justify-content: space-evenly;
+}
+
+.scene-intro {
+  padding-top: 9cqh;
+  padding-bottom: 9cqh;
+  gap: 0;
+}
+
+.scene-intro .kicker {
+  max-width: 98%;
+  font-size: clamp(2.5rem, 9.5cqw, 4.75rem);
+  line-height: 1.2;
+}
+
+.scene-intro .arabic-verse {
+  width: 98%;
+  max-width: 920px;
+  margin: 0;
+  font-size: clamp(2.6rem, 10.4cqw, 5.4rem);
+  line-height: 1.48;
+}
+
+.scene-intro .verse-source {
+  margin-top: 0;
+  font-size: clamp(1.8rem, 6.3cqw, 3rem);
+}
+
+.scene-families {
+  padding-top: 7cqh;
+  padding-bottom: 7cqh;
+}
+
+.scene-families .families-feeling,
+.scene-families .kicker,
+.scene-families .families-invite {
+  max-width: 98%;
+  margin-top: 0;
+  font-size: clamp(2.25rem, 8.4cqw, 4.2rem);
+  line-height: 1.25;
+}
+
+.scene-families .parents-stack {
+  margin-top: 0;
+  gap: 1.2cqh;
+}
+
+.scene-families .parent-full-name {
+  width: 100%;
+  font-size: clamp(2.6rem, 10.5cqw, 5.25rem);
+  line-height: 1.2;
+}
+
+.scene-families .ampersand {
+  margin: 0.8cqh 0;
+}
+
+.scene-families .amp-mark {
+  font-size: clamp(2rem, 7cqw, 3.5rem);
+}
+
+.scene-names {
+  padding-top: 5cqh;
+  padding-bottom: 5cqh;
+}
+
+.scene-names .couple-stack {
+  width: 100%;
+  height: 88%;
+  justify-content: space-evenly;
+}
+
+.scene-names .couple-label {
+  font-size: clamp(2.1rem, 7.4cqw, 3.7rem);
+}
+
+.scene-names .couple-title {
+  font-size: clamp(1.85rem, 6.5cqw, 3.2rem);
+}
+
+.scene-names .couple-person-large .script-name {
+  font-size: clamp(6.5rem, 26cqw, 11rem);
+  line-height: 0.92;
+}
+
+.scene-names .couple-stack .ampersand {
+  margin: 1cqh 0;
+}
+
+.scene-names .couple-stack .amp-mark {
+  font-size: clamp(2.2rem, 7.8cqw, 3.8rem);
+}
+
+.scene-invite {
+  padding-top: 14cqh;
+  padding-bottom: 14cqh;
+}
+
+.scene-invite .script-kindly {
+  width: 100%;
+  margin: 0;
+  font-size: clamp(3.6rem, 14cqw, 7rem);
+  line-height: 1.3;
+}
+
+.scene-invite .kicker {
+  max-width: 100%;
+  font-size: clamp(2.65rem, 9.7cqw, 4.8rem);
+  line-height: 1.35;
+}
+
+.scene-date .save-date-content {
+  top: 50%;
+  width: 96%;
+  min-height: 72%;
+  justify-content: space-evenly;
+}
+
+.scene-date .save-stack .script-save,
+.scene-date .date-time-label {
+  font-size: clamp(2.8rem, 10.4cqw, 5.2rem);
+}
+
+.scene-date .save-month,
+.scene-date .save-year,
+.scene-date .date-time-line {
+  font-size: clamp(2.8rem, 10.6cqw, 5.3rem);
+  line-height: 1.3;
+}
+
+.scene-time,
+.scene-countdown {
+  padding-top: 16cqh;
+  padding-bottom: 16cqh;
+}
+
+.scene-time .script-kindly,
+.scene-countdown .script-kindly {
+  margin: 0;
+  font-size: clamp(3.1rem, 11.5cqw, 5.7rem);
+}
+
+.scene-time .event-time {
+  margin-top: 0;
+  gap: 4cqh;
+  font-size: clamp(3.2rem, 12cqw, 6rem);
+  line-height: 1.35;
+}
+
+.scene-countdown .countdown {
+  width: 100%;
+  margin-top: 0;
+  gap: 2.5cqw;
+}
+
+.scene-countdown .count-value {
+  font-size: clamp(4.8rem, 18cqw, 8.5rem);
+}
+
+.scene-countdown .count-label {
+  font-size: clamp(1.45rem, 5.2cqw, 2.55rem);
+}
+
+.scene-rsvp {
+  padding: 8cqh 3cqw 10cqh;
+}
+
+.scene-rsvp .rsvp-title {
+  width: 100%;
+  max-width: 960px;
+  font-size: clamp(3rem, 11.1cqw, 5.55rem);
+  line-height: 1.3;
+}
+
+.scene-rsvp .rsvp-contact {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 0;
+  gap: 2cqh;
+}
+
+.scene-rsvp .rsvp-name {
+  font-size: clamp(2.75rem, 10cqw, 5rem);
+}
+
+.scene-rsvp .rsvp-place,
+.scene-rsvp .rsvp-city {
+  font-size: clamp(2.25rem, 8.2cqw, 4rem);
+  line-height: 1.3;
+}
+
+.scene-rsvp .rsvp-web {
+  bottom: 5%;
+  font-size: clamp(1.7rem, 6.2cqw, 3rem);
+}
+
+@container invite (max-height: 700px) {
+  .scene {
+    padding-top: 4cqh;
+    padding-bottom: 4cqh;
+  }
+
+  .scene-intro .arabic-verse {
+    font-size: clamp(2.25rem, 9.2cqw, 4.6rem);
+    line-height: 1.38;
+  }
+
+  .scene-families .parent-full-name {
+    font-size: clamp(2.2rem, 8.8cqw, 4.4rem);
+  }
+
+  .scene-names .couple-person-large .script-name {
+    font-size: clamp(5.4rem, 21.5cqw, 8.5rem);
+  }
+
+  .scene-rsvp .rsvp-title {
+    font-size: clamp(2.5rem, 9.2cqw, 4.6rem);
+  }
+}
+
 @container invite (max-height: 600px) {
   .end-sheet {
     padding-top: 24px;
@@ -2139,4 +2374,97 @@ body {
   .scene-rsvp .rsvp-title {
     font-size: clamp(2.35rem, 8.8cqw, 4.25rem);
   }
+}
+
+/* Final Arabic-name guard: glyphs extend beyond the nominal line box. */
+.scene-names .couple-stack,
+.scene-names .couple-person-large,
+.scene-names .script-name,
+.scene-names .script-name .ch-connected {
+  overflow: visible;
+}
+
+.scene-names .couple-person-large .script-name {
+  box-sizing: content-box;
+  min-height: 1.35em;
+  padding-top: 0.28em;
+  padding-bottom: 0.18em;
+  line-height: 1.18;
+}
+
+.scene-names .script-name .ch-connected {
+  padding: 0.22em 0.08em 0.16em;
+  line-height: 1.18;
+}
+
+/* Family page: bold, full-width names and titles. */
+.scene-families {
+  padding-left: 2cqw;
+  padding-right: 2cqw;
+}
+
+.scene-families .families-feeling,
+.scene-families > .kicker,
+.scene-families .families-invite {
+  width: 100%;
+  max-width: none;
+  font-size: clamp(2.4rem, 9.2cqw, 4.6rem);
+  font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: 0;
+  margin-right: 0;
+}
+
+.scene-families .parents-stack,
+.scene-families .parent-name,
+.scene-families .parent-full-name {
+  width: 100%;
+  max-width: none;
+}
+
+.scene-families .parent-full-name {
+  font-size: clamp(2.9rem, 11.5cqw, 5.75rem);
+  font-weight: 900;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.scene-families .parent-full-name .ch-connected {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  white-space: normal;
+  overflow: visible;
+  text-wrap: balance;
+}
+
+@container invite (max-height: 700px) {
+  .scene-families .families-feeling,
+  .scene-families > .kicker,
+  .scene-families .families-invite {
+    font-size: clamp(2rem, 7.8cqw, 3.9rem);
+  }
+
+  .scene-families .parent-full-name {
+    font-size: clamp(2.4rem, 9.8cqw, 4.9rem);
+  }
+}
+
+/* Keep each role title visually attached to its name. The connected glyph
+   span still carries the extra ascender room required by Arabic lettering. */
+.scene-names .couple-person-large {
+  gap: 0;
+}
+
+.scene-names .couple-title {
+  margin: 0;
+  line-height: 1.15;
+}
+
+.scene-names [data-part="groom"] .script-name,
+.scene-names [data-part="bride"] .script-name {
+  min-height: 1.22em;
+  margin-top: 0.25cqh;
+  padding-top: 0.06em;
+  padding-bottom: 0.12em;
 }

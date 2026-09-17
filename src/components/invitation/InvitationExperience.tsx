@@ -759,7 +759,7 @@ function addNamesInkReveal(
       // Keep the unrevealed area on the left so the visible ink follows the nib.
       // Negative vertical insets keep Arabic ascenders/diacritics visible;
       // the old mask clipped the glyphs to the line box during the reveal.
-      clipPath: "inset(-22% 0 -22% 100%)",
+      clipPath: "inset(-45% -8% -35% 100%)",
     }, at);
 
     timeline.to(driver, {
@@ -773,14 +773,14 @@ function addNamesInkReveal(
         const revealInset = `${Math.max(0, (1 - progress) * 100)}%`;
 
         gsap.set(pen, { x, y });
-        gsap.set(word, { clipPath: `inset(-22% 0 -22% ${revealInset})` });
+        gsap.set(word, { clipPath: `inset(-45% -8% -35% ${revealInset})` });
       },
     }, at);
     timeline.set(word, {
       opacity: 1,
       y: 0,
       filter: "blur(0px)",
-      clipPath: "inset(0 0 0 0%)",
+      clipPath: "inset(-45% -8% -35% -8%)",
     }, at + duration + 0.01);
   };
 
