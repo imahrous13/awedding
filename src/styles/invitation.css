@@ -211,7 +211,7 @@ body {
 .rsvp-title,
 .rsvp-web {
   font-family: var(--serif);
-  font-weight: 500;
+  font-weight: 1000;
   color: var(--text-burgundy);
   text-transform: uppercase;
 }
@@ -220,7 +220,7 @@ body {
   font-size: 5.1cqw;
   letter-spacing: 0.34em;
   line-height: 1.35;
-  font-weight: 500;
+  font-weight: 1000;
   margin-right: -0.34em;
 }
 
@@ -1296,14 +1296,14 @@ body {
 }
 
 .scene-intro .kicker {
-  font-size: clamp(16px, 4.6cqw, 24px);
+  font-size: clamp(32px, 4.6cqw, 24px);
   color: #6a3a44;
 }
 
 .scene-intro .arabic-verse {
   width: min(88%, 540px);
   font-family: "ArabicText", "Times New Roman", serif;
-  font-size: clamp(21px, 6.8cqw, 36px);
+  font-size: clamp(32px, 6.8cqw, 36px);
   line-height: 1.95;
 }
 
@@ -1933,4 +1933,210 @@ body {
 
 .end-map {
   font-size: clamp(1.15rem, 4cqw, 1.55rem);
+}
+
+/* Full-screen type pass: the final overrides intentionally let each scene use
+   more of the 9:16 stage while preserving enough room for Arabic line shape. */
+.scene {
+  padding-left: 5cqw;
+  padding-right: 5cqw;
+}
+
+.scene-intro {
+  padding-top: 18%;
+  gap: 2.4cqh;
+}
+
+.scene-intro .kicker {
+  font-size: clamp(2.25rem, 8.6cqw, 4.25rem);
+}
+
+.scene-intro .arabic-verse {
+  width: min(96%, 820px);
+  font-size: clamp(2.75rem, 11.2cqw, 6rem);
+  line-height: 1.45;
+}
+
+.scene-intro .verse-source {
+  font-size: clamp(1.45rem, 4.8cqw, 2.25rem);
+}
+
+.scene-families {
+  padding-top: 16%;
+}
+
+.scene-families .families-feeling,
+.scene-families .kicker,
+.scene-families .families-invite {
+  font-size: clamp(2rem, 7.6cqw, 3.8rem);
+  line-height: 1.25;
+}
+
+.scene-families .parents-stack {
+  margin-top: 3.2cqh;
+  gap: 0.8cqh;
+}
+
+.scene-families .parent-full-name {
+  width: min(98%, 860px);
+  font-size: clamp(2.55rem, 10.2cqw, 5rem);
+  line-height: 1.15;
+}
+
+.scene-names {
+  justify-content: center;
+  padding-top: 0;
+}
+
+.scene-names .couple-stack {
+  width: 96%;
+}
+
+.scene-names .couple-person-large .script-name {
+  width: 100%;
+  font-size: clamp(6rem, 24cqw, 9.5rem);
+  line-height: 0.86;
+}
+
+.scene-names .couple-label {
+  font-size: clamp(1.85rem, 6.4cqw, 3rem);
+}
+
+.scene-names .couple-title {
+  font-size: clamp(1.6rem, 5.6cqw, 2.65rem);
+}
+
+.scene-names .couple-stack .ampersand {
+  margin: 36px 0 30px;
+}
+
+.scene-names .couple-stack .amp-mark {
+  font-size: clamp(1.9rem, 6.6vw, 2.8rem);
+}
+
+.scene-invite .script-kindly {
+  width: min(96%, 850px);
+  font-size: clamp(3rem, 11.6cqw, 5.75rem);
+  line-height: 1.18;
+}
+
+.scene-invite .kicker {
+  max-width: 94%;
+  font-size: clamp(2rem, 7.4cqw, 3.7rem);
+  line-height: 1.35;
+}
+
+.scene-date .save-date-content {
+  top: 48%;
+}
+
+.scene-date .save-stack .script-save {
+  font-size: clamp(2.45rem, 9.2cqw, 4.6rem);
+}
+
+.scene-date .save-month,
+.scene-date .save-year {
+  font-size: clamp(2.55rem, 9.4cqw, 4.8rem);
+}
+
+.scene-date .date-time-label,
+.scene-time .script-kindly,
+.scene-countdown .script-kindly {
+  font-size: clamp(2.3rem, 8.6cqw, 4.3rem);
+}
+
+.scene-date .date-time-line,
+.scene-time .event-time {
+  font-size: clamp(2.35rem, 8.8cqw, 4.5rem);
+  line-height: 1.28;
+}
+
+.scene-time .event-time {
+  gap: 2.2cqh;
+}
+
+.scene-countdown .countdown {
+  gap: 4.2cqw;
+}
+
+.scene-countdown .count-value {
+  font-size: clamp(4rem, 14cqw, 7rem);
+}
+
+.scene-countdown .count-label {
+  font-size: clamp(1.2rem, 4.2cqw, 2rem);
+}
+
+.scene-rsvp {
+  padding-top: 0;
+  justify-content: center;
+}
+
+.scene-rsvp .rsvp-title {
+  width: min(96%, 880px);
+  font-size: clamp(2.75rem, 10cqw, 5rem);
+  line-height: 1.25;
+}
+
+.scene-rsvp .rsvp-contact {
+  width: min(94%, 780px);
+  margin-top: 4.8cqh;
+  gap: 1.7cqh;
+}
+
+.scene-rsvp .rsvp-name {
+  font-size: clamp(2.55rem, 8.8cqw, 4.35rem);
+}
+
+.scene-rsvp .rsvp-place,
+.scene-rsvp .rsvp-city {
+  font-size: clamp(2rem, 7.1cqw, 3.45rem);
+  line-height: 1.25;
+}
+
+.scene-rsvp .map-link {
+  font-size: clamp(1.45rem, 5.2cqw, 2.4rem);
+}
+
+.end-date {
+  font-size: clamp(2.3rem, 8.8cqw, 4.25rem);
+}
+
+.end-time {
+  font-size: clamp(1.55rem, 5.9cqw, 2.7rem);
+}
+
+.end-venue {
+  font-size: clamp(1.95rem, 7cqw, 3.25rem);
+}
+
+.end-address {
+  font-size: clamp(1.6rem, 5.5cqw, 2.55rem);
+}
+
+.end-map {
+  font-size: clamp(1.35rem, 4.8cqw, 2.2rem);
+}
+
+@container invite (max-height: 700px) {
+  .scene-intro .arabic-verse {
+    font-size: clamp(2.3rem, 10cqw, 4.7rem);
+    line-height: 1.38;
+  }
+
+  .scene-families .parent-full-name {
+    font-size: clamp(2.15rem, 9cqw, 4.2rem);
+  }
+
+  .scene-names .couple-person-large .script-name {
+    font-size: clamp(5.2rem, 21cqw, 8rem);
+  }
+
+  .scene-names .couple-stack .ampersand {
+    margin: 24px 0 20px;
+  }
+
+  .scene-rsvp .rsvp-title {
+    font-size: clamp(2.35rem, 8.8cqw, 4.25rem);
+  }
 }
